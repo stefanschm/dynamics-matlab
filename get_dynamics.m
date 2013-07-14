@@ -1,9 +1,11 @@
 function [ts, ts_info] = get_dynamics(ts_date, ts_market, ts_infotype, ts_subset )
 %GET_DYNAMICS Interface to the BIT@EPI.Dynamics webservice
 %   This function can be used to directly access the BIT@EPI.Dynamics
-%   webservice ot of Matlab. It can either save the specified timeseries
-%   or parse them for further processing in Matlab. To setup the
-%   webservice, please read the comments in setup_dynamics.m. 
+%   webservice ot of Matlab. It can save the specified timeseries
+%   and parse it for further processing in Matlab. To setup the
+%   webservice, please read the comments in setup_dynamics.m. Usually this
+%   is done automatically during the first run and should not bother the
+%   user.
 %   
 %
 %   To function properly, the file "base64decode.m" from
